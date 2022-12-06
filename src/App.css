@@ -1,0 +1,86 @@
+/* Remove browser defaults, can also get crazy and use normalize or reset */
+
+/*We might want to seperate our stylings in a more professional environment*/
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ }
+
+ /* Style App.js wrapper*/
+ .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+ }
+
+  /* Tab Container*/
+
+  .Tabs {
+    width: 95%;
+    height: auto;
+    min-height: 400px;
+    background: #120542;
+    margin: 3.5rem auto 1.5rem;
+    padding: 2rem 1rem;
+    color: #E8F0F2;
+    border-radius: 2rem;
+
+    @media (max-width: 769px) {
+      padding: 2rem 0;
+    }
+  }
+
+ /* Tab Navigation */
+ul.nav {
+  width: 80%;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #450579;
+  border-radius: 2rem;
+  padding-left: 0px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+ul.nav li {
+  width: 60%;
+  padding: 1.5rem;
+  list-style: none;
+  text-align: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+ul.nav li:first-child {
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+ 
+ul.nav li:last-child {
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+ul.nav li:hover {
+  background: rgba(117, 13, 158, 0.15);
+}
+ul.nav li.active {
+  background: #39db6f;
+  color:#450579;
+}
+
+/* Tab Content Styles*/
+.TabContent {
+  font-size: 2rem;
+  text-align: center;
+}
